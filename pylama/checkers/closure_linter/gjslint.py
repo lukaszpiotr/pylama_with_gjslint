@@ -145,16 +145,6 @@ def _CheckPath(path):
   return map(make_error_record, error_handler.GetErrors())
 
 
-def _GetFilePaths(argv):
-  suffixes = ['.js']
-  if FLAGS.additional_extensions:
-    suffixes += ['.%s' % ext for ext in FLAGS.additional_extensions]
-  if FLAGS.check_html:
-    suffixes += ['.html', '.htm']
-  return fileflags.GetFileList(argv, 'JavaScript', suffixes)
-
-
-
 def main(argv = None):
   """Main function.
 
