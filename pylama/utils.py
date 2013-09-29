@@ -166,7 +166,6 @@ def gjslint(path, code=None, **meta):
 
     import re
     regExErrStr = re.compile(r'Line\s(\d+),\s(E:\d+):\s(.*)')
-    current_path = None
     for record in records_iter:
         matchErrStr = re.match(regExErrStr, record.error_string)
         if matchErrStr:
