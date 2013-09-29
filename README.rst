@@ -53,9 +53,10 @@ Requirements:
 =============
 
 - Python (2.6, 2.7, 3.2, 3.3)
+- To use JavaScript checker (gjslint) you need to install ``python-gflags`` with ``pip install python-gflags``.
 - If your tests are failing on Win platform you are missing: ``curses`` - http://www.lfd.uci.edu/~gohlke/pythonlibs/
   (The curses library supplies a terminal-independent screen-painting and keyboard-handling facility for text-based terminals)
-- To use JavaScript checker (gjslint) you need ``gflags.py`` and ``gflags_validator.py`` in your `site-packages`.
+
 
 .. _installation:
 
