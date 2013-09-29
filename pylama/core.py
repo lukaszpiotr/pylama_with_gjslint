@@ -95,7 +95,7 @@ def is_code_relevant_for_linter(path, linter):
 
     :return bool: True if:
                   - '.js' file and gjslinter OR
-                  - '.py' and python liners.
+                  - '.py' and python linters.
 
     """
     if path.endswith('.js') and linter != 'gjslint':
