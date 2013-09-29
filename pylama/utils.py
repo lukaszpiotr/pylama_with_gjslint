@@ -165,7 +165,7 @@ def gjslint(path, code=None, **meta):
     records_iter = gjslint.main(["", path])
 
     import re
-    regExErrStr = re.compile(r'^Line\s(\d+),\s(E:\d+):\s(.*)')
+    regExErrStr = re.compile(r'Line\s(\d+),\s(E:\d+):\s(.*)')
     current_path = None
     for record in records_iter:
         matchErrStr = re.match(regExErrStr, record.error_string)
